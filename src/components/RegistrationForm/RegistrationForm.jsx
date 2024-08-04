@@ -1,8 +1,8 @@
 import { Formik, Form, Field, ErrorMessage } from "formik";
-import * as Yup from "yup";
-import css from "./RegistrationForm.module.css"
 import { useDispatch } from "react-redux";
 import { register } from "../../redux/auth/operations";
+import * as Yup from "yup";
+import css from "./RegistrationForm.module.css"
 
 export default function RegistrationForm() {
   const dispatch = useDispatch()
@@ -15,7 +15,7 @@ export default function RegistrationForm() {
   const FeedbackSchema = Yup.object().shape({
     name: Yup.string().min(3, "Too Short!").max(50, "Too Long!").required("*Required"),
     email: Yup.string().min(2, "Too Short!").max(50, "Too Long!").required("*Required"),
-    password: Yup.string().min(3, "Too Short!").max(50, "Too Long!").required("*Required"),
+    password: Yup.string().min(8, "Too Short!").max(50, "Too Long!").required("*Required"),
   });
 
   return (
@@ -43,7 +43,7 @@ export default function RegistrationForm() {
 
         <div className={css.item}>
           <label className={css.inputLabel}>Password</label>
-          <Field className={css.inputItem} type="text" name="password" />
+          <Field className={css.inputItem} type="text" name="password" placeholder="min 8 symbols"/>
           <ErrorMessage className={css.error} name="password" component="span" />
         </div>
 

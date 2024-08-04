@@ -28,6 +28,7 @@
   font-size: 14px;
   outline: transparent;
   color: darkred;
+  padding: 3px;
 }
 
 .inputItem:focus {

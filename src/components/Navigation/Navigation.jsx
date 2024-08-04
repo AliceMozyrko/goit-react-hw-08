@@ -14,7 +14,7 @@ export default function Navigation() {
   return (
       <nav className={css.container}>
         <NavLink to="/" className={makeLinkClass}>Home</NavLink>
-        {isLoggedIn &&  <NavLink to="/contacts" className={makeLinkClass}>Contacts</NavLink>}
+        {isLoggedIn &&  (<NavLink to="/contacts" className={makeLinkClass}>Contacts</NavLink>)}
       </nav>
   )
 }

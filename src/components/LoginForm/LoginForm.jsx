@@ -13,7 +13,7 @@ export default function LoginForm() {
   
     const FeedbackSchema = Yup.object().shape({
     email: Yup.string().min(2, "Too Short!").max(50, "Too Long!").required("*Required"),
-    password: Yup.string().min(3, "Too Short!").max(50, "Too Long!").required("*Required"),
+    password: Yup.string().min(8, "Too Short!").max(50, "Too Long!").required("*Required"),
   });
 
     return (
@@ -31,7 +31,7 @@ export default function LoginForm() {
 
         <div className={css.item}>
           <label className={css.inputLabel}>Password</label>
-          <Field className={css.inputItem} type="text" name="password" />
+          <Field className={css.inputItem} type="text" name="password" placeholder="min 8 symbols"/>
           <ErrorMessage className={css.error} name="password" component="span" />
         </div>
 
