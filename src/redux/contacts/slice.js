@@ -39,7 +39,7 @@ const contactsSlice = createSlice({
         state.items = []
         state.loading = false
         state.error = null
-    })
+      })
   }
 
 })

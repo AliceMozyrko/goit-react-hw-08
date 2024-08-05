@@ -1,17 +1,16 @@
 .container {
   display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 250px;
-  gap: 5px;
+  gap: 100px;
 }
 
 .txt {
   font-size: 19px;
+  margin-bottom: 5px;
 }
 
 .input {
-  margin-bottom: 30px;
+  min-width: 220px;
+  margin-bottom: 50px;
   height: 24px;
   border: 1px solid grey;
   border-radius: 3px;
