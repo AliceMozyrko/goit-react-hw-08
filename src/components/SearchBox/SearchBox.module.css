@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 272px;
-  gap: 3px;
+  max-width: 250px;
+  gap: 5px;
 }
 
 .txt {
@@ -16,4 +16,11 @@
   border: 1px solid grey;
   border-radius: 3px;
   font-size: 14px;
+  color: darkred;
+  outline: transparent;
+  padding: 5px;
+}
+
+.input:focus {
+  border: 1.8px solid black;
 }

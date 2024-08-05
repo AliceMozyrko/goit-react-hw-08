@@ -28,7 +28,7 @@
   font-size: 14px;
   outline: transparent;
   color: darkred;
-  padding: 3px;
+  padding: 5px;
 }
 
 .inputItem:focus {
@@ -36,9 +36,9 @@
 }
 
 .btn {
-  border: 1px solid gray;
+  border: 1px solid black;
   border-radius: 3px;
-  background-color: rgb(237, 234, 234);
+  background-color: white;
   min-width: 100px;
   height: 30px;
   font-size: 17px;
@@ -47,7 +47,8 @@
 }
 
 .btn:hover {
-  background-color: rgb(200, 197, 197);
+  border: 2px solid darkred;
+  color: darkred;
 }
 
 .error {

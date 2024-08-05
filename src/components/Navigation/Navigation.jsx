@@ -9,7 +9,7 @@ import css from "./Navigation.module.css"
   }
     
 export default function Navigation() {
-  const { isLoggedIn } = useSelector(selectIsLoggedIn);
+  const isLoggedIn  = useSelector(selectIsLoggedIn);
 
   return (
       <nav className={css.container}>

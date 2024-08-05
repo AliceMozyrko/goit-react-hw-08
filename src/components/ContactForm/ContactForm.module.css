@@ -4,11 +4,10 @@
   border: 1px solid black;
   border-radius: 3px;
   margin-bottom: 30px;
-  margin-top: 20px;
   width: 100%;
   max-width: 250px;
-  gap: 10px;
-  padding: 10px;
+  gap: 20px;
+  padding: 20px;
 }
 
 .item {
@@ -26,12 +25,19 @@
   border: 1px solid grey;
   border-radius: 3px;
   font-size: 14px;
+  color: darkred;
+  outline: transparent;
+  padding: 5px;
+}
+
+.inputItem:focus {
+  border: 1.8px solid black;
 }
 
 .btn {
-  border: 1px solid gray;
+  border: 1px solid black;
   border-radius: 3px;
-  background-color: rgb(237, 234, 234);
+  background-color: white;
   max-width: 115px;
   height: 30px;
   font-size: 17px;
@@ -40,7 +46,8 @@
 }
 
 .btn:hover {
-  background-color: rgb(200, 197, 197);
+  border: 2px solid darkred;
+  color: darkred;
 }
 
 .error {
